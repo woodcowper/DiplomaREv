@@ -26,4 +26,10 @@ public class MainController {
         return "signin";
     }
 
+    @GetMapping("/admin-panel")
+    public String adminPanel(Model model) {
+        model.addAttribute("tmp", "Panel administratora");
+        return "admin-panel";
+    }
+
 }

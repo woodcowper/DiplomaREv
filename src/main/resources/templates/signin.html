@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="${tmp}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -10,10 +10,10 @@
 
 <div class="container mt-5 mb-5">
     <h1>Zaloguj się</h1>
-    <form action="/signin" method="post">
+    <form action="" method="GET">
         <input type="text" name="login" placeholder="Wprowadź login" class="form-control" maxlength="10"><br>
         <input type="password" name="pass" placeholder="Wprowadź hasło" class="form-control"><br>
-        <button type="submit"  class="btn btn-success">Zaloguj</button>
+        <a type="submit" class="btn btn-success" href="/admin-panel">Zaloguj</a>
     </form>
 
 </div>
