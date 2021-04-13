@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Блог сайта</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -14,6 +14,7 @@
             <h3 th:text="${el.title}"></h3>
             <p th:text="${el.anons}"></p>
             <a th:href="'/blog/' + ${el.id}" class="btn btn-warning">Детальнее</a>
+            <a th:href="'/blog/' + ${el.id}" class="btn btn-warning">Удалить</a>
         </div>
 
     </div>

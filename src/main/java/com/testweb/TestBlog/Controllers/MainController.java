@@ -20,4 +20,16 @@ public class MainController {
         return "about";
     }
 
+    @GetMapping("/signin")
+    public String signin(Model model) {
+        model.addAttribute("tmp", "Sign in");
+        return "signin";
+    }
+
+    @GetMapping("/admin-panel")
+    public String adminPanel(Model model) {
+        model.addAttribute("tmp", "Panel administratora");
+        return "admin-panel";
+    }
+
 }
