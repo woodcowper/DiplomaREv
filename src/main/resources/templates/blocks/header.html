@@ -1,15 +1,23 @@
-<div th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head" xmlns:th="http://www.thymeleaf.org">
+    <title th:text="${tmp}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<div th:fragment="header" xmlns:th="http://www.thymeleaf.org">
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+        <a href="/" class="logo">
+            <img th:src="@{/img/logo.png}" alt="Logo">
+        </a>
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="/">Główna</a>
-            <a class="p-2 text-dark" href="/blog">Usługi</a>
-            <a class="p-2 text-dark" href="/blog">Portfolio</a>
+            <a class="p-2 text-dark test" href="/">Główna</a>
+            <a class="p-2 test" href="/blog">Usługi</a>
+            <a class="p-2 text-dark" href="">Portfolio</a>
             <a class="p-2 text-dark" href="/blog">Blog</a>
             <a class="p-2 text-dark" href="/about">O nas</a>
             <a class="p-2 text-dark" href="">Kontakt</a>
             <a class="p-2 text-dark" href="/blog/add">Добавить статью</a>
-
         </nav>
         <a class="btn btn-outline-primary" href="/signin">Zaloguj się</a>
     </div>
