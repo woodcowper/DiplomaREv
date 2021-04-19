@@ -1,10 +1,13 @@
 .test{
-    color: red;
+    border: 1px solid red;
+}
+.test2{
+    border: 1px solid green;
 }
 
-/*
- * Header
- */
+ /*
+  * Header
+  */
  .logo{
      width: auto;
      height: 70px;
@@ -26,4 +29,14 @@
      transition: 0.2s all;
  }
 
+ /*
+  * Admin panel
+  */
+.adm-card{
+    height: 300px;
+}
+.adm-card h5{
+    text-transform: uppercase;
+    line-height: 25px;
+}
 
