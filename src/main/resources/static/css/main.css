@@ -6,8 +6,24 @@
  * Header
  */
  .logo{
-    width: 150px !important;
-    height: auto;
+     width: auto;
+     height: 70px;
+ }
+ .menu-top{
+     position: relative;
+     height: 70px;
+ }
+ .menu-bg{
+     background: #222222;
+ }
+ .link{
+     color: #34b15d;
+ }
+ .link:hover{
+     color: #f3f3f3;
+     outline: none;
+     text-decoration: none;
+     transition: 0.2s all;
  }
 
 
