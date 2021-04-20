@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Admin panel</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
+<header th:insert="blocks/header :: head"></header>
 <body>
 <header th:insert="blocks/header :: header"></header>
 
-<div class="container mt-5">
-    <h1>Panel administratora</h1>
-
-
+<div class="album">
+    <div class="container mt-4">
+        <h3>Panel administratora</h3>
+        <div class="row mt-4">
+            <div class="col-3 text-center align-middle">
+                <div class="card mb-4 shadow-sm adm-card">
+                    <h5>Rejestracja użytkownika</h5>
+                </div>
+            </div>
+            <div class="col-3 text-center align-middle">
+                <div class="card mb-4 shadow-sm adm-card">
+                    <h5>Rejestracja użytkownika</h5>
+                </div>
+            </div>
+            <div class="col-3 text-center align-middle">
+                <div class="card mb-4 shadow-sm adm-card">
+                    <h5>Rejestracja użytkownika</h5>
+                </div>
+            </div>
+            <div class="col-3 text-center ">
+                <div class="d-flex align-items-center card mb-4 shadow-sm adm-card">
+                    <h5>Rejestracja użytkownika</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>

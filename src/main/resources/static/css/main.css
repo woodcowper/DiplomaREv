@@ -1,0 +1,42 @@
+.test{
+    border: 1px solid red;
+}
+.test2{
+    border: 1px solid green;
+}
+
+ /*
+  * Header
+  */
+ .logo{
+     width: auto;
+     height: 70px;
+ }
+ .menu-top{
+     position: relative;
+     height: 70px;
+ }
+ .menu-bg{
+     background: #222222;
+ }
+ .link{
+     color: #34b15d;
+ }
+ .link:hover{
+     color: #f3f3f3;
+     outline: none;
+     text-decoration: none;
+     transition: 0.2s all;
+ }
+
+ /*
+  * Admin panel
+  */
+.adm-card{
+    height: 300px;
+}
+.adm-card h5{
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
