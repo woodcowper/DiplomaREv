@@ -29,7 +29,7 @@ public class MainController {
 
     @GetMapping("/admin-panel")
     public String adminPanel(Model model) {
-        model.addAttribute("tmp", "Panel administratora");
+        model.addAttribute("tmp", "Administration panel");
         return "admin-panel";
     }
 
