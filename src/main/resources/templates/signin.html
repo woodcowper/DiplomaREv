@@ -5,16 +5,14 @@
 <header th:insert="blocks/header :: header"></header>
 
 <div class="container mt-5 mb-5">
-    <h1>Sign in</h1>
-    <div class="row test2 d-flex">
-        <div class=" test justify-content-center col-md-6">
-            <form action="" method="GET" class="">
+    <h1 class="text-center">Sign in</h1>
+        <div class="d-flex justify-content-center">
+            <form action="" method="GET" class="col-6">
                 <input type="text" name="login" placeholder="Enter login" class="form-control" maxlength="10"><br>
                 <input type="password" name="pass" placeholder="Enter password" class="form-control"><br>
                 <a type="submit" class="btn btn-success" href="/admin-panel">Sign in</a>
             </form>
         </div>
-    </div>
 </div>
 
 </body>
